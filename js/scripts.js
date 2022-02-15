@@ -8,6 +8,9 @@ function PigDice(){
 //  Method For Adding Player1 Score
 PigDice.prototype.addPlayer1Score = function(score){
     this.player1 += score;
-}
+};
 
-// Method For Adding 
+// Method For Adding Player2 Score
+PigDice.prototype.addPlayer2Score = function(score){
+    this.player2 += score;
+};
