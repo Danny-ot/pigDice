@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>PigDice</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Pig Dice</h1>
+        <!-- GameBox -->
+        <div class="game-box">
+
+            <!-- Player1 GameBox -->
+            <div class="player-1 player activeplayer1">
+                <div class="player-score">
+                    <h1>Player 1</h1>
+                    <p id="player-1score" class="text-primary">0</p>
+                </div>
+                <div class="current-score bg-primary">
+                    <p>CURRENT</p>
+                    <span id="player-1current">0</span>
+                </div>
+            </div>
+
+            <!-- Player2 GameBox -->
+            <div class="player-2 player">
+                <div class="player-score">
+                    <h1>Player 2</h1>
+                    <p id="player-2score" class="text-success">0</p>
+                </div>
+                <div class="current-score bg-success text-center" >
+                    <p>CURRENT</p>
+                    <span id="player-2current">0</span>
+                </div>
+                
+            </div>
+
+            <!-- Buttons -->
+                <button id="new-game" class="btn btn-dark">New Game</button>
+                <button id="rotate" class="btn btn-primary">Rotate</button>
+                <button id="hold" class="btn btn-primary">Hold</button>
+        </div>
+    </div>
+</body>
+
+</html>
