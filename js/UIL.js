@@ -25,6 +25,22 @@ $(document).ready(function () {
         }
 
     })
+    $("#hold").click(function () {
+        function fade() {
+            $(".player-" + player + "warning").css("opacity", "0");
+       }
+      setTimeout(fade, 200)
+        pigDice.addScore(score, player);
+        displayScore();
+        changePlayer();
+        score = 0;
+        if(pigDice.player1 >= 100){
+            $(".player-1winner").css("opacity" , "1")
+        }else if(pigDice.player2 >= 100){
+            $(".player-2winner").css("opacity" , "1")
+        }
+    })
+
     
 
 })
