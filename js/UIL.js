@@ -61,7 +61,13 @@ $(document).ready(function () {
     }
 
     $("#new-game").click(function(){
-        
+        pigDice.clearScore();
+        $("button").removeClass("btn-success");
+        $("button").addClass("btn-primary");
+        $(".winner").css("opacity" , "0");
+        displayScore();
+        $(".player-2").removeClass("active");
+        $(".player-1").addClass("active");
     })
 
 })
