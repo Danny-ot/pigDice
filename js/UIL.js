@@ -41,6 +41,27 @@ $(document).ready(function () {
         }
     })
 
-    
+    function changePlayer(){
+        function fade() {
+                 $(".player-" + player + "warning").css("opacity", "0");
+            }
+           setTimeout(fade, 200)
+        $(".player").removeClass("active");
+        $("#player-" + player + "current").text("0");
+        if(player === 2){
+            $("button").removeClass("btn-success");
+            $("button").addClass("btn-primary");
+            player = 1;
+        }else{
+            $("button").removeClass("btn-primary");
+            $("button").addClass("btn-success");
+            player ++;
+        }
+        $(".player-" + player).addClass("active")
+    }
+
+    $("#new-game").click(function(){
+        
+    })
 
 })
