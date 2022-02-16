@@ -10,6 +10,6 @@ function PigDice(){
         if( player === 1){
             this.player1 += score;
         }else{
-            this.player2 += score
+            this.player2 += score;
         }
     }
