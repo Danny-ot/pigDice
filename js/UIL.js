@@ -36,8 +36,10 @@ $(document).ready(function () {
         score = 0;
         if(pigDice.player1 >= 100){
             $(".player-1winner").css("opacity" , "1")
+            $(".action-btn").prop("disabled" , true)
         }else if(pigDice.player2 >= 100){
-            $(".player-2winner").css("opacity" , "1")
+            $(".player-2winner").css("opacity" , "1");
+            $(".action-btn").prop("disabled" , true)
         }
     })
 
@@ -61,7 +63,11 @@ $(document).ready(function () {
     }
 
     $("#new-game").click(function(){
+        
+        $(".action-btn").prop("disabled" , false)
         pigDice.clearScore();
+        $(".current").text("0")
+        $("button").removeClass("disabled");
         $("button").removeClass("btn-success");
         $("button").addClass("btn-primary");
         $(".winner").css("opacity" , "0");
