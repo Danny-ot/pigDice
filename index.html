@@ -15,14 +15,14 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center">Pig Dice</h1>
+        <h1 class="text-center text-light">Pig Dice</h1>
         <!-- GameBox -->
         <div class="game-box">
 
             <!-- Player1 GameBox -->
             <div class="player-1 player active">
                 <div class="player-score">
-                    <h2 class = "mb-4 text-primary winner player-1winner">Winner!!</h2>
+                    <h2 class="mb-4 text-primary winner player-1winner">Winner!!</h2>
                     <h1>Player 1</h1>
                     <p id="player-1score" class="text-primary"></p>
                 </div>
@@ -36,22 +36,27 @@
             <!-- Player2 GameBox -->
             <div class="player-2 player">
                 <div class="player-score">
-                    <h2 class = "mb-4 text-success winner player-2winner">Winner!!</h2>
+                    <h2 class="mb-4 text-success winner player-2winner">Winner!!</h2>
                     <h1>Player 2</h1>
                     <p id="player-2score" class="text-success"></p>
                 </div>
                 <p class="player-warning player-2warning">Sorry you picked 1</p>
-                <div class="current-score bg-success text-center" >
+                <div class="current-score bg-success text-center">
                     <p>CURRENT</p>
                     <span id="player-2current" class="current">0</span>
                 </div>
-                
+
             </div>
 
             <!-- Buttons -->
-                <button id="new-game" class="btn btn-dark">New Game</button>
-                <button id="rotate" class="btn btn-primary action-btn">Rotate</button>
-                <button id="hold" class="btn btn-primary action-btn">Hold</button>
+            <button id="new-game" class="btn btn-dark">New Game</button>
+            <button id="rotate" class="btn btn-primary action-btn">Rotate</button>
+            <button id="hold" class="btn btn-primary action-btn">Hold</button>
+
+            <!--  -->
+            <div class="dice btn btn-dark btn-lg">
+                0
+            </div>
         </div>
     </div>
 </body>

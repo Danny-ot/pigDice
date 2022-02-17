@@ -11,6 +11,7 @@ $(document).ready(function () {
     $("#rotate").click(function () {
         let current = $("#player-" + player + "current");
         let dice = Math.floor(Math.random() * 6) + 1
+        $(".dice").text(dice)
         if (dice !== 1) {
             score += dice;
             current.text(score);
@@ -63,7 +64,7 @@ $(document).ready(function () {
     }
 
     $("#new-game").click(function(){
-        
+        $(".dice").text("0")
         $(".action-btn").prop("disabled" , false)
         pigDice.clearScore();
         $(".current").text("0")

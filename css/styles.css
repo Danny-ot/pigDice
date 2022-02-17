@@ -8,7 +8,6 @@ body{
     display: flex;
     width: 75%;
     margin-left: 11%;
-    margin-top: 2%;
     position: relative;
 }
 
@@ -20,7 +19,7 @@ body{
 }
 .player-score p{
     font-size: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .current-score{ 
@@ -48,17 +47,17 @@ body{
 }
 
 #new-game{
-    top: 20%;
+    top: 16%;
     left: 44%;
 }
 
 #rotate{
-    top: 60%;
+    top: 65%;
     left: 46%;
 }
 
 #hold{
-    top: 75%;
+    top: 79%;
     left:47%;
 }
 
@@ -69,6 +68,14 @@ body{
 
 .winner{
     opacity: 0;
+}
+
+.dice{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    font-size: 30px;
+    width: 80px;
 }
 
 
