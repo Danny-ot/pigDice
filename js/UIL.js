@@ -1,16 +1,23 @@
+// Variable for initializing the pigdice constructor
 let pigDice = new PigDice();
 
+
+// Function For Displaying the score
 function displayScore() {
-    $("#player-1score").text(pigDice.player1)
+    $("#player-1score").text(pigDice.player1);
     $("#player-2score").text(pigDice.player2);
 }
+
+// Document ready method
 $(document).ready(function () {
-    let player = 1
+    let player = 1;
     let score = 0;
     displayScore();
+
+    // The Rotate Click Method
     $("#rotate").click(function () {
         let current = $("#player-" + player + "current");
-        let dice = Math.floor(Math.random() * 6) + 1
+        let dice = Math.floor(Math.random() * 6) + 1;
         $(".dice").text(dice)
         if (dice !== 1) {
             score += dice;
@@ -26,6 +33,8 @@ $(document).ready(function () {
         }
 
     })
+
+    // The Hold Click Method
     $("#hold").click(function () {
         function fade() {
             $(".player-" + player + "warning").css("opacity", "0");
@@ -44,6 +53,7 @@ $(document).ready(function () {
         }
     })
 
+    // The ChangePlayer Function
     function changePlayer() {
 
         setTimeout(fade, 100)
@@ -61,9 +71,11 @@ $(document).ready(function () {
             $("button").addClass("btn-success");
             player++;
         }
-        $(".player-" + player).addClass("active")
+        $(".player-" + player).addClass("active");
     }
 
+
+        // New Game Click Method
     $("#new-game").click(function () {
 
         $(".player-warning").css("opacity", "0");
