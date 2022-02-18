@@ -14,6 +14,13 @@ pigDice.addScore(300);
 pigDice
 Expected Output : {player1:300 , player2:0}
 
+Test: "The addscore method can add player2 score correctly"
+Code:
+let pigDice = new PigDice();
+pigDice.addScore(300);
+pigDice
+Expected Output : {player1:0 , player2:300}
+
 
 
 # Application Details
