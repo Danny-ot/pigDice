@@ -73,4 +73,4 @@ Expected Output : {player1:0 , player2:0}
 ### Application Github  Information : [
     Repository Name : pigDice 
     Remote URL : https://github.com/Danny-ot/pigDice.git
-]\
+]

@@ -18,8 +18,8 @@ $(document).ready(function () {
 
         } else {
             $(".player-" + player + "warning").css("opacity", "1");
-            
-            
+
+
             changePlayer();
             score = 0;
 
@@ -29,49 +29,52 @@ $(document).ready(function () {
     $("#hold").click(function () {
         function fade() {
             $(".player-" + player + "warning").css("opacity", "0");
-       }
-      setTimeout(fade, 200)
+        }
+        setTimeout(fade, 200)
         pigDice.addScore(score, player);
         displayScore();
         changePlayer();
         score = 0;
-        if(pigDice.player1 >= 150){
-            $(".player-1winner").css("opacity" , "1")
-            $(".action-btn").prop("disabled" , true)
-        }else if(pigDice.player2 >= 150){
-            $(".player-2winner").css("opacity" , "1");
-            $(".action-btn").prop("disabled" , true)
+        if (pigDice.player1 >= 150) {
+            $(".player-1winner").css("opacity", "1")
+            $(".action-btn").prop("disabled", true)
+        } else if (pigDice.player2 >= 150) {
+            $(".player-2winner").css("opacity", "1");
+            $(".action-btn").prop("disabled", true)
         }
     })
 
-    function changePlayer(){
+    function changePlayer() {
+
+        setTimeout(fade, 100)
         function fade() {
-                 $(".player-" + player + "warning").css("opacity", "0");
-            }
-           setTimeout(fade, 200)
+            $(".player-" + player + "warning").css("opacity", "0");
+        }
         $(".player").removeClass("active");
         $("#player-" + player + "current").text("0");
-        if(player === 2){
+        if (player === 2) {
             $("button").removeClass("btn-success");
             $("button").addClass("btn-primary");
             player = 1;
-        }else{
+        } else {
             $("button").removeClass("btn-primary");
             $("button").addClass("btn-success");
-            player ++;
+            player++;
         }
         $(".player-" + player).addClass("active")
     }
 
-    $("#new-game").click(function(){
+    $("#new-game").click(function () {
+
+        $(".player-warning").css("opacity", "0");
         $(".dice").text("0")
-        $(".action-btn").prop("disabled" , false)
+        $(".action-btn").prop("disabled", false)
         pigDice.clearScore();
         $(".current").text("0")
         $("button").removeClass("disabled");
         $("button").removeClass("btn-success");
         $("button").addClass("btn-primary");
-        $(".winner").css("opacity" , "0");
+        $(".winner").css("opacity", "0");
         displayScore();
         $(".player-2").removeClass("active");
         $(".player-1").addClass("active");
