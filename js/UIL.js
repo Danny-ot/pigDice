@@ -1,7 +1,7 @@
 let pigDice = new PigDice();
 
 function displayScore() {
-    $("#player-1score").text(pigDice.player1);
+    $("#player-1score").text(pigDice.player1)
     $("#player-2score").text(pigDice.player2);
 }
 $(document).ready(function () {

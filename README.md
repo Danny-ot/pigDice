@@ -1,3 +1,15 @@
+
+Describe:PigDice();
+Test:"It can be initialized and it contains the player1 and 2 scores"
+Code:
+let pigDice = new pigDice();
+pigDice
+Expected Output : {player1:0 , player2: 0};
+
+
+
+
+
 # Application Details
 ### Application Author: [
     Name : Oladeji Daniel
