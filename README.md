@@ -29,6 +29,15 @@ pigDice.addScore(700 , 2);
 pigDice
 Expected Output : {player1:300 , player2:700}
 
+Test: "The clearScore method can clear score completely"
+Code:
+let pigDice = new PigDice();
+pigDice
+Expected Output : {player1:300 , player2:700}
+pigDice.clearScore();
+pigDice
+Expected Output : {player1:0 , player2:0}
+
 
 
 # Application Details
