@@ -1,12 +1,18 @@
 
 Describe:PigDice();
+
 Test:"It can be initialized and it contains the player1 and 2 scores"
 Code:
-let pigDice = new pigDice();
+let pigDice = new PigDice();
 pigDice
 Expected Output : {player1:0 , player2: 0};
 
-
+Test: "The addscore method can add player1 score correctly"
+Code:
+let pigDice = new PigDice();
+pigDice.addScore(300);
+pigDice
+Expected Output : {player1:300 , player2:0}
 
 
 
