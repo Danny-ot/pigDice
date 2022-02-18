@@ -35,10 +35,10 @@ $(document).ready(function () {
         displayScore();
         changePlayer();
         score = 0;
-        if(pigDice.player1 >= 100){
+        if(pigDice.player1 >= 150){
             $(".player-1winner").css("opacity" , "1")
             $(".action-btn").prop("disabled" , true)
-        }else if(pigDice.player2 >= 100){
+        }else if(pigDice.player2 >= 150){
             $(".player-2winner").css("opacity" , "1");
             $(".action-btn").prop("disabled" , true)
         }
