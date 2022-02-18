@@ -21,6 +21,14 @@ pigDice.addScore(300);
 pigDice
 Expected Output : {player1:0 , player2:300}
 
+Test: "The addscore method can add player1 score and player2 score correctly"
+Code:
+let pigDice = new PigDice();
+pigDice.addScore(300 , 1);
+pigDice.addScore(700 , 2);
+pigDice
+Expected Output : {player1:300 , player2:700}
+
 
 
 # Application Details
