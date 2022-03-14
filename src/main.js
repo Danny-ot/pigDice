@@ -1,4 +1,9 @@
 // Variable for initializing the pigdice constructor
+import $ from 'jquery';
+import 'bootStrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
+import PigDice from './pigDice';
 let pigDice = new PigDice();
 
 
