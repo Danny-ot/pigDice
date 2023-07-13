@@ -1,5 +1,7 @@
 let pigDice = new PigDice();
 
+
+
 function displayScore() {
     $("#player-1score").text(pigDice.player1);
     $("#player-2score").text(pigDice.player2);
@@ -8,16 +10,19 @@ $(document).ready(function () {
     let player = 1
     let score = 0;
     displayScore();
+    $(".dice").hide();
     $("#rotate").click(function () {
         let current = $("#player-" + player + "current");
         let dice = Math.floor(Math.random() * 6) + 1
-        $(".dice").text(dice)
+        $(".dice").html(`<img src="./img/dice-${dice}.png" alt="">`);
+        $(".dice").show();
         if (dice !== 1) {
             score += dice;
             current.text(score);
 
         } else {
             $(".player-" + player + "warning").css("opacity", "1");
+            $(".dice").hide();
             
             
             changePlayer();
@@ -27,10 +32,12 @@ $(document).ready(function () {
 
     })
     $("#hold").click(function () {
+
         function fade() {
             $(".player-" + player + "warning").css("opacity", "0");
        }
       setTimeout(fade, 200)
+      $(".dice").hide();
         pigDice.addScore(score, player);
         displayScore();
         changePlayer();
