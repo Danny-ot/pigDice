@@ -78,6 +78,12 @@ body{
     width: 80px;
 }
 
+.dice>img {
+    width: 80px;
+    box-shadow: 0px 0px 15px #888888;
+}
+
+
 
 
 
