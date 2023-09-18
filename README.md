@@ -1,3 +1,4 @@
+
 # Application Details
 ### Application Author: [
     Name : Oladeji Daniel
@@ -31,4 +32,4 @@
 ### Application Github  Information : [
     Repository Name : pigDice 
     Remote URL : https://github.com/Danny-ot/pigDice.git
-]\
+]
